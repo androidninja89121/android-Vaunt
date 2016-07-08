@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/relativeLayout6">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Runway"
+                android:id="@+id/tvTitle"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relativeLayout5"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@+id/relativeLayout5"
+            android:layout_alignRight="@+id/relativeLayout5"
+            android:id="@+id/relativeLayoutUnderBar"
+            android:background="#fbffd8"
+            android:layout_marginTop="5dp"></RelativeLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView6"
+            android:src="@drawable/vaunt_triangle_trans"
+            android:layout_below="@+id/relativeLayoutUnderBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meet the world&apos;s most vaunted supermodels on Runway"
+        android:id="@+id/tvTitleDescription"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch Now"
+        android:id="@+id/btnWatchNow"
+        android:layout_below="@+id/tvTitleDescription"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_rectangle_layout"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Runway is a close-up look at the lifestyles of the most desirable women in the world. Episodes are a series of short films with exclusive access into the glamorous life of a supermodel"
+        android:id="@+id/tvText"
+        android:layout_below="@+id/btnWatchNow"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>

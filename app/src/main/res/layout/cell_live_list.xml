@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/black">
+    <view
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        class="android.vaunt.ui.DynamicImageView"
+        android:id="@+id/content_image"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgvPhoto"
+        android:layout_alignTop="@+id/content_image"
+        android:layout_alignLeft="@+id/content_image"
+        android:layout_alignBottom="@+id/content_image"
+        android:layout_alignRight="@+id/content_image" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/content_image"
+        android:layout_toRightOf="@+id/content_image"
+        android:layout_toEndOf="@+id/content_image"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="-3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KEVIN HART"
+                android:id="@+id/tvName"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                android:id="@+id/tvOnlineStatus"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="#00ff00"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgvMA"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ma"
+                android:layout_toLeftOf="@+id/tvOnlineStatus"
+                android:layout_marginRight="5dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/tvDescription"
+            android:layout_below="@+id/relativeLayout8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+    </RelativeLayout>
+</RelativeLayout>

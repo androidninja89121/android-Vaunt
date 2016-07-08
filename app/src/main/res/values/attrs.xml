@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="fadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularViewPager">
+        <attr name="arc_progress" format="integer"/>
+        <attr name="progress_arc_max" format="integer"/>
+
+        <attr name="progress_arc_clockwise_outline_color" format="color"/>
+        <attr name="progress_arc_counter_clockwise_outline_color" format="color"/>
+        <attr name="progress_arc_clockwise_color" format="color"/>
+        <attr name="progress_arc_counter_clockwise_color" format="color"/>
+
+        <attr name="progress_arc_clockwise_outline_width" format="dimension"/>
+        <attr name="progress_arc_counter_clockwise_outline_width" format="dimension"/>
+        <attr name="progress_arc_clockwise_width" format="dimension"/>
+        <attr name="progress_arc_counter_clockwise_width" format="dimension"/>
+
+        <attr name="progress_start_line_enabled" format="boolean"/>
+        <attr name="progress_pager_on_click_enabled" format="boolean"/>
+
+        <attr name="progress_pager_fill_circle_color" format="color"/>
+        <attr name="progress_pager_fill_mode" format="enum">
+            <enum name="default_mode" value="0"/>
+            <enum name="pie_mode" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+</resources>

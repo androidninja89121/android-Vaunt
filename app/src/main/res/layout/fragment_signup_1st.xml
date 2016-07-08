@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/header_logo_triangle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:id="@+id/imgvHeaderLogo"
+            android:src="@drawable/header_logo_text"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/btn_return">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:src="@drawable/ic_left_arrow"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/avatar_rect"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true">
+
+        <view
+            class="android.vaunt.ui.DynamicImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/image_avatar"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/avatar_placeholder"
+            android:padding="5dp" />
+
+        <com.github.OrangeGangsters.circularbarpager.library.CircularBarPager
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/circle_progress"
+            style="@style/CircularBarPager_Default"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/select_avatar"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/avatar_edge" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
+        android:text="Continue"
+        android:id="@+id/btnContinue"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/light_gray"
+        android:textSize="15dp"
+        android:background="@drawable/btn_red"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_below="@+id/avatar_rect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/btn_gray"
+        android:id="@+id/relativeLayout14">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black"
+            android:id="@+id/linearLayout12"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linearLayout12">
+
+            <RelativeLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black"
+                android:id="@+id/relativeLayout13"></RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_pswd"
+                android:layout_alignParentTop="false"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit_normal"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:inputType="textEmailAddress"
+                android:hint="Password"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray"
+                android:textSize="16dp"
+                android:layout_toLeftOf="@+id/relativeLayout13"
+                android:layout_toStartOf="@+id/relativeLayout13"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_username"
+                android:background="@drawable/edit_normal"
+                android:inputType="textEmailAddress"
+                android:hint="Username"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray"
+                android:textSize="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/relativeLayout13"
+                android:layout_toEndOf="@+id/relativeLayout13"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp" />
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_email"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_above="@+id/linearLayout12"
+            android:background="@drawable/edit_normal"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email Address"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_gray"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
+        android:text="Select an Avatar"
+        android:id="@+id/btnSelectAvatar"
+        android:textColor="@color/light_gray"
+        android:textSize="15dp"
+        android:background="@drawable/btn_gray"
+        android:gravity="center"
+        android:layout_below="@+id/relativeLayout14"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp" />
+
+</RelativeLayout>
